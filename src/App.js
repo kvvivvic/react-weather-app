@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import WeatherBox from "./component/WeatherBox/WeatherBox";
+import WeatherBox from "./components/WeatherBox/WeatherBox";
 import { MdLocationOn } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
 
@@ -25,9 +25,8 @@ function App() {
           <FaSearch className=" text-4xl  bg-blue-100 p-2 rounded-full hover:scale-110 transition-all" />
         </button>
       </form>
-      <WeatherBox data={data} />
-      <div>hi</div>
-      <div>bye</div>
+
+      {Object.keys(data).length !== 0 && <WeatherBox data={data} />}
     </div>
   );
 }
