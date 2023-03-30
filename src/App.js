@@ -18,23 +18,15 @@ function App() {
   };
   return (
     <div className="container">
-      <form
-        onSubmit={handleSubmit}
-        className="flex items-center justify-around"
-      >
+      <form onSubmit={handleSubmit} className="flex items-center justify-around">
         <MdLocationOn className="text-3xl " />
-        <input
-          className="w-48 border-none outline-none font-font"
-          type="text"
-          value={location}
-          onChange={handleChange}
-          placeholder="Enter your location"
-        />
+        <input className="w-48 border-none outline-none font-font" type="text" value={location} onChange={handleChange} placeholder="Enter your location" />
         <button className="">
           <FaSearch className=" text-4xl  bg-blue-100 p-2 rounded-full hover:scale-110 transition-all" />
         </button>
       </form>
       <WeatherBox data={data} />
+      <div>hi</div>
     </div>
   );
 }
