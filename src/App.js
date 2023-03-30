@@ -27,6 +27,7 @@ function App() {
       </form>
       <WeatherBox data={data} />
       <div>hi</div>
+      <div>bye</div>
     </div>
   );
 }
